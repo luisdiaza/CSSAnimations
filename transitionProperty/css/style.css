@@ -12,8 +12,18 @@ body {
     background: pink;
     width: 200px;
     height: 200px;
-    transition: transform 300ms ease-in-out;
+    /* transition: transform 300ms ease-in-out; */
+    transition: transform 300ms cubic-bezier(0, 0.47, 0.32, 1.97);
+    pointer-events: none;/*don't register animations on this, it's an element you can't interact with, you can only see it*/
 }
-.trigger:hover .box {
+
+/* Hover implementation*/
+
+/*.trigger.hover .box { /*when trigger is hovered, animate box*/
+/*    transform: translate(200px, 150px) rotate(20deg);
+}*/
+
+/* Class implementation*/
+.trigger.clicked .box { /*when trigger is clicked, animate box*/
     transform: translate(200px, 150px) rotate(20deg);
 }
