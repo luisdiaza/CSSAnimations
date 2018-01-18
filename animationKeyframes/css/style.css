@@ -1,0 +1,29 @@
+body {
+    padding: 50px;
+}
+
+.box {
+    display: inline-block;
+    background: pink;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    /* animation: myframes 2s ease-in-out 0s infinite; */
+    animation-name: myframes;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite; /*should be a number. how many times you want the animation to iterate*/
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes myframes {
+    from {
+        height: 200px;
+    }
+    to {
+        height: 600px;
+    }
+}
