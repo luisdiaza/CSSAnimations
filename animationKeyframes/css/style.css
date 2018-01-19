@@ -10,20 +10,26 @@ body {
     position: relative;
     /* animation: myframes 2s ease-in-out 0s infinite; */
     animation-name: myframes;
-    animation-duration: 2s;
+    /* animation-duration: 2s; */
+    animation-duration: 300ms;
     animation-timing-function: ease-in-out;
     animation-delay: 0s;
-    animation-iteration-count: infinite; /*should be a number. how many times you want the animation to iterate*/
+    /* animation-iteration-count: infinite; /*should be a number. how many times you want the animation to iterate*/ */
+    animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
-    animation-play-state: running;
+}
+.box.is-paused {
+    animation-play-state: paused;
 }
 
 @keyframes myframes {
-    from {
-        height: 200px;
+    0% {
+        /* height: 200px; */
+        transform: scale(0);
     }
-    to {
-        height: 600px;
+    100% {
+        /* height: 600px; */
+        transform: scale(1);
     }
 }

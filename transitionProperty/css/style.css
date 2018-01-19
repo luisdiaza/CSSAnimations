@@ -19,11 +19,12 @@ body {
 
 /* Hover implementation*/
 
-/*.trigger.hover .box { /*when trigger is hovered, animate box*/
-/*    transform: translate(200px, 150px) rotate(20deg);
-}*/
+/*.trigger:hover .box { /*when trigger is hovered, animate box*/
+    /* transform: translate(200px, 150px) rotate(20deg);
+} */
 
 /* Class implementation*/
+
 .trigger.clicked .box { /*when trigger is clicked, animate box*/
-    transform: translate(200px, 150px) rotate(20deg);
+   transform: translate(200px, 150px) rotate(20deg);
 }
